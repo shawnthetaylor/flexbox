@@ -227,8 +227,28 @@
             <li>5</li>
           </ul>
         </div>
-        <h3>flex-shrink</h3>
-        <div class='demo'>
+        <div class='demo flex-shrink'>
+          <h3>flex-shrink</h3>
+          <label>
+            Child 1
+            <input type='number' data-child='1' value='1' min='0' max='100'>
+          </label>
+          <label>
+            Child 2
+            <input type='number' data-child='2' value='1' min='0' max='100'>
+          </label>
+          <label>
+            Child 3
+            <input type='number' data-child='3' value='1' min='0' max='100'>
+          </label>
+          <label>
+            Child 4
+            <input type='number' data-child='4' value='1' min='0' max='100'>
+          </label>
+          <label>
+            Child 5
+            <input type='number' data-child='5' value='1' min='0' max='100'>
+          </label>
           <ul>
             <li>1</li>
             <li>2</li>
@@ -237,8 +257,8 @@
             <li>5</li>
           </ul>
         </div>
-        <h3>flex-basis</h3>
         <div class='demo'>
+          <h3>flex-basis</h3>
           <ul>
             <li>1</li>
             <li>2</li>
@@ -247,18 +267,36 @@
             <li>5</li>
           </ul>
         </div>
-        <h3>flex</h3>
         <div class='demo'>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-          </ul>
+          <h3>flex</h3>
+          <p>Description: combination of flex-direction and flex-wrap</p>
         </div>
-        <h3>align-self</h3>
-        <div class='demo'>
+        <div class='demo align-self'>
+          <label>
+            <input type='radio' data-rule='align-self' value='auto' name='align-s' checked>
+           auto 
+          </label>
+          <label>
+            <input type='radio' data-rule='align-self' value='flex-start' name='align-s'>
+            flex-start
+          </label>
+          <label>
+            <input type='radio' data-rule='align-self' value='flex-end' name='align-s'>
+            flex-end
+          </label>
+          <label>
+            <input type='radio' data-rule='align-self' value='center' name='align-s'>
+            center
+          </label>
+          <label>
+            <input type='radio' data-rule='align-self' value='baseline' name='align-s'>
+            baseline
+          </label>
+          <label>
+            <input type='radio' data-rule='align-self' value='stretch' name='align-s'>
+            stretch 
+          </label>
+          <h3>align-self</h3>
           <ul>
             <li>1</li>
             <li>2</li>
@@ -268,6 +306,7 @@
           </ul>
         </div>
       </div>
+
     </section>
     <script type='text/javascript' src='./flexbox.js'></script>
   </body>
