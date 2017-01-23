@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flexbox Demo</title>
+    <link rel='stylesheet' type='text/css' href='./styles.css'>
+  </head>
+  <body>
+    <section>
+      <div class='parent'>
+
+        <div class='demo'>
+          <h3>flex-direction</h3>
+          <p>Description</p>
+          <label>
+            <input type='radio' data-rule='flex-direction' value='row' name='direction' checked>
+            row
+          </label>
+          <label>
+            <input type='radio' data-rule='flex-direction' value='row-reverse' name='direction'>
+            row-reverse
+          </label>
+          <label>
+            <input type='radio' data-rule='flex-direction' value='column' name='direction'>
+            column
+          </label>
+          <label>
+            <input type='radio' data-rule='flex-direction' value='column-reverse' name='direction'>
+            column-reverse
+          </label>
+          <ul class='flex-direction'>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+
+        <div class='demo'>
+          <h3>flex-wrap</h3>
+          <p>Description</p>
+          <label>
+            <input type='radio' data-rule='flex-wrap' value='nowrap' name='wrap' checked>
+            nowrap
+          </label>
+          <label>
+            <input type='radio' data-rule='flex-wrap' value='wrap' name='wrap'>
+            wrap
+          </label>
+          <label>
+            <input type='radio' data-rule='flex-wrap' value='wrap-reverse' name='wrap'>
+            wrap-reverse
+          </label>
+          <ul class='flex-wrap'>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+
+        <h3>flex-flow</h3>
+        <p>Description: combination of flex-direction and flex-wrap</p>
+
+        <div class='demo'>
+          <h3>justify-content</h3>
+          <p>Description</p>
+          <label>
+            <input type='radio' data-rule='justify-content' value='flex-start' name='justify' checked>
+            flex-start
+          </label>
+          <label>
+            <input type='radio' data-rule='justify-content' value='flex-end' name='justify'>
+            flex-end
+          </label>
+          <label>
+            <input type='radio' data-rule='justify-content' value='center' name='justify'>
+            center
+          </label>
+          <label>
+            <input type='radio' data-rule='justify-content' value='space-between' name='justify'>
+            space-between
+          </label>
+          <label>
+            <input type='radio' data-rule='justify-content' value='space-around' name='justify'>
+            space-around
+          </label>
+          <ul class='justify-content'>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+
+        <div class='demo'>
+          <h3>align-items</h3>
+          <p>Description</p>
+          <label>
+            <input type='radio' data-rule='align-items' value='stretch' name='align' checked>
+            stretch
+          </label>
+          <label>
+            <input type='radio' data-rule='align-items' value='flex-start' name='align'>
+            flex-start 
+          </label>
+          <label>
+            <input type='radio' data-rule='align-items' value='flex-end' name='align'>
+            flex-end  
+          </label>
+          <label>
+            <input type='radio' data-rule='align-items' value='center' name='align'>
+            center 
+          </label>
+          <label>
+            <input type='radio' data-rule='align-items' value='baseline' name='align'>
+            baseline
+          </label>
+          <ul class='align-items'>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+        <div class='demo'>
+          <h3>align-content</h3>
+          <p>Description</p>
+          <label>
+            <input type='radio' data-rule='align-content' value='stretch' name='align-c' checked>
+            stretch
+          </label>
+          <label>
+            <input type='radio' data-rule='align-content' value='flex-start' name='align-c'>
+            flex-start 
+          </label>
+          <label>
+            <input type='radio' data-rule='align-content' value='flex-end' name='align-c'>
+            flex-end 
+          </label>
+          <label>
+            <input type='radio' data-rule='align-content' value='center' name='align-c'>
+            center 
+          </label>
+          <label>
+            <input type='radio' data-rule='align-content' value='space-between' name='align-c'>
+            space-between
+          </label>
+          <label>
+            <input type='radio' data-rule='align-content' value='space-around' name='align-c'>
+            space-around
+          </label>
+          <ul class='align-content'>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class='children'>
+        <div class='demo order'>
+          <h3>order</h3>
+          <label>
+            Child 1
+            <input type='number' data-child='1' value='0' min='-20' max='20'>
+          </label>
+          <label>
+            Child 2
+            <input type='number' data-child='2' value='0' min='-20' max='20'>
+          </label>
+          <label>
+            Child 3
+            <input type='number' data-child='3' value='0' min='-20' max='20'>
+          </label>
+          <label>
+            Child 4
+            <input type='number' data-child='4' value='0' min='-20' max='20'>
+          </label>
+          <label>
+            Child 5
+            <input type='number' data-child='5' value='0' min='-20' max='20'>
+          </label>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+        <div class='demo flex-grow'>
+          <h3>flex-grow</h3>
+          <label>
+            Child 1
+            <input type='number' data-child='1' value='0' min='0' max='100'>
+          </label>
+          <label>
+            Child 2
+            <input type='number' data-child='2' value='0' min='0' max='100'>
+          </label>
+          <label>
+            Child 3
+            <input type='number' data-child='3' value='0' min='0' max='100'>
+          </label>
+          <label>
+            Child 4
+            <input type='number' data-child='4' value='0' min='0' max='100'>
+          </label>
+          <label>
+            Child 5
+            <input type='number' data-child='5' value='0' min='0' max='100'>
+          </label>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+        <h3>flex-shrink</h3>
+        <div class='demo'>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+        <h3>flex-basis</h3>
+        <div class='demo'>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+        <h3>flex</h3>
+        <div class='demo'>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+        <h3>align-self</h3>
+        <div class='demo'>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script type='text/javascript' src='./flexbox.js'></script>
+  </body>
+</html>

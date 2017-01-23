@@ -1,0 +1,150 @@
+:root {
+  --flex-direction: row;
+  --flex-wrap: nowrap;
+  --justify-content: flex-start;
+  --align-items: stretch;
+  --align-content: stretch;
+
+  --order-c1: 1;
+  --order-c2: 1;
+  --order-c3: 1;
+  --order-c4: 1;
+  --order-c5: 1;
+
+  --flex-grow-c1: 0;
+  --flex-grow-c2: 0;
+  --flex-grow-c3: 0;
+  --flex-grow-c4: 0;
+  --flex-grow-c5: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+section {
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  margin: 5px;
+  height: 50px;
+}
+
+.parent ul {
+  background: #241e4e;
+}
+.parent ul li {
+  background: #dbd56e;
+}
+
+.children ul {
+  background: red;
+}
+.children ul li {
+  background: yellow;
+}
+
+/* flex-direction */
+.flex-direction {
+  flex-direction: var(--flex-direction);  
+}
+.flex-direction > li {
+  flex-grow: 1;
+}
+
+
+/* flex-wrap */
+.flex-wrap {
+  flex-wrap: var(--flex-wrap);
+}
+.flex-wrap > li {
+  width: 35%;
+}
+
+.justify-content {
+  justify-content: var(--justify-content);
+}
+.justify-content > li {
+  width: 10%;
+}
+
+.align-items {
+  align-items: var(--align-items);
+  height: 120px;
+}
+.align-items > li {
+  flex: 1;
+  height: 50px;
+}
+.align-items > li:nth-child(2) {
+  height: 25px;
+}
+.align-items > li:nth-child(4) {
+  height: 75px;
+}
+
+.align-content {
+  align-content: var(--align-content);
+  flex-wrap: wrap;
+  height: 300px;
+}
+.align-content > li {
+  width: 25%;
+}
+
+.order li {
+  height: 50px;
+  flex-grow: 1;
+}
+.order ul > li:nth-child(1) {
+  order: var(--order-c1);
+}
+.order ul > li:nth-child(2) {
+  order: var(--order-c2);
+}
+.order ul > li:nth-child(3) {
+  order: var(--order-c3);
+}
+.order ul > li:nth-child(4) {
+  order: var(--order-c4);
+}
+.order ul > li:nth-child(5) {
+  order: var(--order-c5);
+}
+
+.flex-grow li {
+  height: 50px;
+}
+.flex-grow ul > li:nth-child(1) {
+  flex-grow: var(--flex-grow-c1);
+}
+.flex-grow ul > li:nth-child(2) {
+  flex-grow: var(--flex-grow-c2);
+}
+.flex-grow ul > li:nth-child(3) {
+  flex-grow: var(--flex-grow-c3);
+}
+.flex-grow ul > li:nth-child(4) {
+  flex-grow: var(--flex-grow-c4);
+}
+.flex-grow ul > li:nth-child(5) {
+  flex-grow: var(--flex-grow-c5);
+}
